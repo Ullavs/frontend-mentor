@@ -4,5 +4,12 @@
 
 ## Challenges
 
-- 001: [Interactive Rating Component](https://ullavs.github.io/frontend-mentor/001)
-- 002: [QR Code Component](https://ullavs.github.io/frontend-mentor/002)
+- 001: Interactive rating component
+  - [Live site URL](https://ullavs.github.io/frontend-mentor/001)
+  - []()
+- 002: QR code component
+  - [Live site URL](https://ullavs.github.io/frontend-mentor/002)
+  - []()
+- 003: NFT preview card component
+  - [Live site URL](https://ullavs.github.io/frontend-mentor/003/)
+  - []()
