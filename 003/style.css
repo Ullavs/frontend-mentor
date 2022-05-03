@@ -1,33 +1,163 @@
-/* # Front-end Style Guide
+:root {
+  --text-soft-blue: hsl(215, 51%, 70%);
+  --text-cyan: hsl(178, 100%, 50%);
+  --hover-color: hsla(178, 100%, 50%, 50%);
+  --main-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --horizontal-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: "Outfit", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
 
-## Layout
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-The designs were created to the following widths:
+* {
+  margin: 0;
+}
 
-- Mobile: 375px
-- Desktop: 1440px
+html,
+body {
+  height: 100%;
+  font-size: 1.125rem;
+}
 
-## Colors
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
 
-### Primary
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
 
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
+body {
+  background-color: var(--main-background);
+  color: var(--text-soft-blue);
+  font-family: var(--font-family);
+  display: grid;
+  place-content: center;
+}
 
-### Neutral
+.card {
+  background-color: var(--card-background);
+  position: relative;
+  max-width: 325px;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+}
 
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
+@media (min-width: 600px) {
+  .card {
+    max-width: 350px;
+  }
+}
 
-## Typography
+.main-img {
+  height: auto;
+  border-radius: 0.6rem;
+}
 
-### Body Copy
+.hover-img {
+  opacity: 0;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  right: 1.2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.6rem;
+  transition: all ease-in-out 250ms;
+  display: grid;
+  place-content: center;
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
 
-- Font size (paragraph): 18px
+.hover-img:hover {
+  opacity: 1;
+}
 
-### Font
+h1 {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-block: 1rem;
+}
 
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600 */
+p {
+  font-weight: var(--font-weight-light);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--horizontal-line);
+  padding-block: 1rem;
+}
+
+.card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ethereum {
+  color: var(--text-cyan);
+}
+
+.info-text {
+  font-weight: var(--font-weight-regular);
+}
+
+.author {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.avatar {
+  width: 32px;
+  border-radius: 50%;
+  height: auto;
+  border: 1px solid var(--white);
+  margin-right: 1rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.hover {
+  transition: ease-in-out all 250ms;
+}
+
+.hover:hover {
+  color: var(--text-cyan);
+}
+
+.attribution {
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 2rem;
+  font-style: italic;
+}
+.attribution a {
+  color: var(--white);
+  text-decoration: none;
+}
