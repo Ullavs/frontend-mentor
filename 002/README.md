@@ -5,5 +5,5 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - Semantic HTML5 markup
-- CSS 3
+- CSS custom properties
 - CSS Grid
