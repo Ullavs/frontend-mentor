@@ -61,14 +61,22 @@ body {
   font-weight: var(--reg-font-weight);
   background-image: url(images/bg-main-mobile.png);
   background-color: var(--background-color);
+  background-repeat: no-repeat;
+  background-position: right -225px top -225px;
+}
+
+header,
+.intro,
+.hero-details h3,
+.hero-details-info,
+.hero-details-price,
+.buttons,
+footer {
+  margin-inline: 1.5rem;
 }
 
 header {
-  margin: 2.5rem 1.5rem 4rem 1.5rem;
-}
-
-.intro {
-  margin-inline: 1.5rem;
+  margin-block: 2.5rem 4rem;
 }
 
 h1 {
@@ -81,11 +89,11 @@ h1 {
 .intro p {
   font-size: 1rem;
   line-height: 1.625rem;
-  margin-top: 1.25rem;
+  margin-block-start: 1.25rem;
 }
 
 .hero {
-  margin-top: 10.375rem;
+  margin-block-start: 10.375rem;
   background-color: var(--black);
   position: relative;
   border-radius: 0.75rem;
@@ -111,31 +119,22 @@ h1 {
   background-color: var(--red-orange);
   color: var(--white);
   border-radius: 0.75rem;
-  margin-top: -2rem;
+  margin-block-start: -2rem;
   position: relative;
   z-index: 1;
-}
-
-.hero-details h3,
-.hero-details-info,
-.hero-details-price,
-.buttons,
-footer {
-  margin-inline: 1.5rem;
 }
 
 .hero-details h3 {
   font-weight: var(--bold-font-weight);
   font-size: 2rem;
   line-height: 2.5rem;
-  padding-top: 3rem;
+  padding-block-start: 3rem;
 }
 
 .hero-details-info {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin-top: 0.75rem;
-  margin-bottom: 2.25rem;
+  margin-block: 0.75rem 2.25rem;
 }
 
 .hero-details-price {
@@ -159,7 +158,7 @@ footer {
   letter-spacing: -0.18px;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   gap: 1rem;
 }
 
@@ -187,7 +186,7 @@ footer {
 .android-button {
   background-color: var(--white);
   color: var(--black);
-  margin-bottom: 3rem;
+  margin-block-end: 3rem;
 }
 
 .android-button:hover {
@@ -195,18 +194,18 @@ footer {
 }
 
 footer {
-  margin-top: 4rem;
-  padding-bottom: 5rem;
+  margin-block-start: 4rem;
+  overflow: hidden;
 }
 
 footer p {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   font-size: 1rem;
   line-height: 1.625rem;
 }
 
 .social-icons {
-  margin-top: 4rem;
+  margin-block: 4rem 5rem;
   display: flex;
   gap: 1.25rem;
 }
