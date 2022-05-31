@@ -167,25 +167,55 @@ footer {
 .android-button {
   border-radius: 0.75rem;
   padding-block: 1.0625rem;
-  text-align: center;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all ease-in-out 450ms;
 }
 
 .ios-button {
   background-color: var(--black);
+  color: var(--white);
+}
+
+.ios-button:hover {
+  background-color: var(--blue);
 }
 
 .android-button {
   background-color: var(--white);
   color: var(--black);
+  margin-bottom: 3rem;
 }
 
-.logo-footer {
+.android-button:hover {
+  background-color: var(--orange-yellow);
+}
+
+footer {
   margin-top: 4rem;
+  padding-bottom: 5rem;
 }
 
 footer p {
   margin-top: 2rem;
   font-size: 1rem;
   line-height: 1.625rem;
+}
+
+.social-icons {
+  margin-top: 4rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-icons-hover {
+  transition: all ease-in-out 250ms;
+  cursor: pointer;
+}
+
+.social-icons-hover:hover {
+  fill: var(--red-orange);
 }
