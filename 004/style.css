@@ -3,7 +3,11 @@
   --red-orange: #fa7453;
   --orange-yellow: #ffb964;
   --white: #fcfaf9;
+  --background-color: #f2f2f2;
   --black: #191826;
+  --font-family: "IBM Plex Sans", sans-serif;
+  --bold-font-weight: 700;
+  --reg-font-weight: 400;
 }
 
 *,
@@ -52,7 +56,136 @@ h6 {
   overflow-wrap: break-word;
 }
 
-#root,
-#__next {
-  isolation: isolate;
+body {
+  font-family: var(--font-family);
+  font-weight: var(--reg-font-weight);
+  background-image: url(images/bg-main-mobile.png);
+  background-color: var(--background-color);
+}
+
+header {
+  margin: 2.5rem 1.5rem 4rem 1.5rem;
+}
+
+.intro {
+  margin-inline: 1.5rem;
+}
+
+h1 {
+  font-weight: var(--bold-font-weight);
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: -0.45px;
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin-top: 1.25rem;
+}
+
+.hero {
+  margin-top: 10.375rem;
+  background-color: var(--black);
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+.background-image-hero {
+  margin: 0 auto;
+  max-width: 17.5rem;
+  height: auto;
+}
+
+.mobile-screenshot {
+  position: absolute;
+  max-width: 13rem;
+  height: auto;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
+  top: -6.125rem;
+}
+
+.hero-details {
+  background-color: var(--red-orange);
+  color: var(--white);
+  border-radius: 0.75rem;
+  margin-top: -2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-details h3,
+.hero-details-info,
+.hero-details-price,
+.buttons,
+footer {
+  margin-inline: 1.5rem;
+}
+
+.hero-details h3 {
+  font-weight: var(--bold-font-weight);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding-top: 3rem;
+}
+
+.hero-details-info {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.hero-details-price {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-details-price strong {
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+}
+
+.buttons {
+  font-weight: var(--bold-font-weight);
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.18px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.ios-button,
+.android-button {
+  border-radius: 0.75rem;
+  padding-block: 1.0625rem;
+  text-align: center;
+  display: grid;
+}
+
+.ios-button {
+  background-color: var(--black);
+}
+
+.android-button {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.logo-footer {
+  margin-top: 4rem;
+}
+
+footer p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }

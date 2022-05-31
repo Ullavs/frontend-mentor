@@ -10,6 +10,13 @@
       href="images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
   <body>
@@ -18,7 +25,7 @@
     </header>
 
     <main>
-      <div>
+      <div class="intro">
         <h1>We make your music sound extraordinary.</h1>
         <p>
           A system audio equalizer specifically designed for Android and iOS.
@@ -27,29 +34,42 @@
           control, reverb, and more!
         </p>
       </div>
-      <div>
-        <img src="images/illustration-app.png" />
-        <div>
+      <div class="hero">
+        <img class="background-image-hero" src="images/bg-pattern-2.svg" />
+        <img
+          class="mobile-screenshot"
+          src="images/illustration-app.png"
+          height="1284"
+          width="624"
+        />
+        <div class="hero-details">
           <h3>Premium EQ</h3>
-          <p>
+          <p class="hero-details-info">
             Get expert-level control with a robust equalizer, volume mixer, and
             spatial audio. Take your listening experience to a whole new level
             and access all our incredible features!
           </p>
-          <p>$4 / month</p>
-          <div>
-            <a>iOS Download</a>
-            <a>Android Download</a>
+          <p class="hero-details-price">
+            <strong>$4</strong>
+            <span>/ month</span>
+          </p>
+          <div class="buttons">
+            <a class="ios-button"
+              ><img src="images/icon-apple.svg" alt="" />iOS Download</a
+            >
+            <a class="android-button"
+              ><img src="images/icon-android.svg" svg="" />Android Download</a
+            >
           </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <img />
+      <img class="logo-footer" src="images/logo.svg" width="147" height="33" />
       <p>
-        All rights reserved © Equalizer 2021 Have any problems? Contact us via
-        social media or email us at equalizer@example.com
+        All rights reserved © Equalizer 2021 <br />Have any problems? Contact us
+        via social media or email us at <strong>equalizer@example.com</strong>
       </p>
       <div>
         <img src="images/icon-facebook.svg" width="20" height="20" />
