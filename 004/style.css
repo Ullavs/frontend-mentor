@@ -101,6 +101,7 @@ header {
     position: absolute;
     top: -2rem;
     right: -2.5rem;
+    /* left: 25rem; */
   }
 }
 
@@ -162,7 +163,7 @@ h1 {
   .hero {
     margin-block-start: 15.5625rem;
     margin-inline: auto;
-    width: 43.5rem;
+    max-width: 43.5rem;
     height: 37.5rem;
   }
 
@@ -223,6 +224,13 @@ h1 {
     position: relative;
     z-index: 1;
   }
+
+  .hero-details h3,
+  .hero-details-info,
+  .hero-details-price,
+  .buttons {
+    margin-inline: 3rem;
+  }
 }
 
 .buttons {
@@ -272,8 +280,11 @@ footer {
   overflow: hidden;
 }
 
+.footer-section {
+  margin-block: 2rem 5rem;
+}
+
 footer p {
-  margin-block-start: 2rem;
   font-size: 1rem;
   line-height: 1.625rem;
 }
@@ -291,4 +302,25 @@ footer p {
 
 .social-icons-hover:hover {
   fill: var(--red-orange);
+}
+
+@media (min-width: 680px) {
+  footer {
+    margin-block-start: 11.4375rem;
+    margin-inline: 2.4375rem;
+  }
+
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-section p {
+    max-width: 23rem;
+  }
+
+  .social-icons {
+    margin-block: 0;
+  }
 }
