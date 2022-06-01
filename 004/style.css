@@ -46,16 +46,6 @@ select {
   font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
 body {
   font-family: var(--font-family);
   font-weight: var(--reg-font-weight);
@@ -67,8 +57,19 @@ body {
 
 @media (min-width: 680px) {
   body {
-    background-image: url(images/bg-main-tablet.png);
-    background-position: right -225px top -225px;
+    background-image: url(images/bg-main-tablet.png),
+      url(images/bg-pattern-1.svg);
+    background-position: left -225px top -225px, right -2.5rem top -2rem;
+    background-size: 100%, auto 25rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  body {
+    background-image: url(images/bg-main-desktop.png),
+      url(images/bg-pattern-1.svg);
+    background-position: left -42px top -142px, right -2.5rem top -2rem;
+    background-size: 100%, auto 25rem;
   }
 }
 
@@ -91,18 +92,38 @@ header {
 }
 
 @media (min-width: 680px) {
-  header {
-    margin: 3.875rem 2.4375rem 5.9375rem 2.4375rem;
+  header,
+  main,
+  footer {
+    max-width: 69.375rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
   }
 
-  .background-image-header {
-    display: block;
-    width: auto;
-    height: 25rem;
-    position: absolute;
-    top: -2rem;
-    right: -2.5rem;
-    /* left: 25rem; */
+  .hero {
+    max-width: 43.5rem;
+  }
+
+  .hero-details {
+    margin-inline-end: 1rem;
+  }
+
+  .intro {
+    margin-inline: 0;
+  }
+
+  header {
+    margin-block: 3.875rem 5.9375rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  header {
+    margin-block: 3.875rem 7.9375rem;
+  }
+
+  .hero {
+    max-width: 69.375rem;
   }
 }
 
@@ -120,10 +141,6 @@ h1 {
 }
 
 @media (min-width: 680px) {
-  .intro {
-    margin-inline: 2.4375rem 13.0625rem;
-  }
-
   h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -134,6 +151,20 @@ h1 {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-block-start: 1.75rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: -1px;
+  }
+
+  .intro p {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    margin-block-start: 2.5rem;
   }
 }
 
@@ -164,7 +195,6 @@ h1 {
   .hero {
     margin-block-start: 15.5625rem;
     margin-inline: auto;
-    max-width: 43.5rem;
     height: 37.5rem;
   }
 
@@ -173,6 +203,28 @@ h1 {
     margin-inline: 0;
     left: 4rem;
     top: -8.625rem;
+  }
+
+  .background-image-hero {
+    position: relative;
+    top: -2rem;
+    left: 1.3125rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero {
+    margin-block-start: 20.0625rem;
+  }
+
+  .mobile-screenshot {
+    max-width: 19.5rem;
+    left: 6.375rem;
+    top: -13.3125rem;
+  }
+
+  .background-image-hero {
+    left: -4.4rem;
   }
 }
 
@@ -230,6 +282,35 @@ h1 {
   }
 }
 
+@media (min-width: 64rem) {
+  .hero-details {
+    max-width: 27.875rem;
+    height: 39.0625rem;
+    margin-block-start: -21rem;
+    margin-inline-start: 34rem;
+  }
+
+  .hero-details h3,
+  .hero-details-info,
+  .hero-details-price,
+  .buttons {
+    margin-inline: 3.375rem;
+  }
+
+  .hero-details h3 {
+    font-weight: var(--bold-font-weight);
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    padding-block-start: 3.625rem;
+  }
+
+  .hero-details-info {
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+    margin-block: 1.375rem 2.4375rem;
+  }
+}
+
 .buttons {
   font-weight: var(--bold-font-weight);
   font-size: 1.125rem;
@@ -251,6 +332,9 @@ h1 {
   gap: 0.5rem;
   text-decoration: none;
   transition: all ease-in-out 450ms;
+  max-width: 25rem;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .ios-button {
@@ -270,6 +354,17 @@ h1 {
 
 .android-button:hover {
   background-color: var(--orange-yellow);
+}
+
+@media (min-width: 64rem) {
+  .buttons {
+    margin-block-start: 2.875rem;
+  }
+
+  .ios-button,
+  .android-button {
+    padding-block: 0.9375rem;
+  }
 }
 
 footer {
@@ -304,7 +399,6 @@ footer p {
 @media (min-width: 680px) {
   footer {
     margin-block-start: 11.4375rem;
-    margin-inline: 2.4375rem;
   }
 
   .footer-section {
@@ -322,12 +416,22 @@ footer p {
   }
 }
 
-/* To Do:
-Tablet versie: 
-- achtergrondplaatje hero sectie
-- eerst moeten uitzoomen bij laden pagina?
+@media (min-width: 64rem) {
+  footer {
+    margin-block-start: 12.625rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8.625rem;
+  }
 
-Dekstop:
-- url background moet links vastblijven
+  .footer-section {
+    margin-block: 0 5.6875rem;
+    width: 100%;
+    gap: 1rem;
+  }
 
-*/
+  .social-icons {
+    flex-shrink: 0;
+  }
+}
