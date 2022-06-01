@@ -167,10 +167,6 @@ h1 {
     height: 37.5rem;
   }
 
-  .background-image-hero {
-    padding-top: 2.4375rem;
-  }
-
   .mobile-screenshot {
     max-width: 16.875rem;
     margin-inline: 0;
@@ -219,7 +215,7 @@ h1 {
   .hero-details {
     max-width: 25rem;
     height: 34.125rem;
-    margin-block-start: -19.5rem;
+    margin-block-start: -17rem;
     margin-inline-start: 15rem;
     position: relative;
     z-index: 1;
@@ -324,3 +320,10 @@ footer p {
     margin-block: 0;
   }
 }
+
+/* To Do:
+Tablet versie: 
+- achtergrondplaatje hero sectie
+- eerst moeten uitzoomen bij laden pagina?
+
+*/
