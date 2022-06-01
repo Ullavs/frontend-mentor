@@ -71,6 +71,7 @@ body {
     background-position: right -225px top -225px;
   }
 }
+
 header,
 .intro,
 .hero-details h3,
@@ -325,5 +326,8 @@ footer p {
 Tablet versie: 
 - achtergrondplaatje hero sectie
 - eerst moeten uitzoomen bij laden pagina?
+
+Dekstop:
+- url background moet links vastblijven
 
 */
