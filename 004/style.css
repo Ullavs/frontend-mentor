@@ -52,14 +52,15 @@ body {
   background-image: url(images/bg-main-mobile.png);
   background-color: var(--background-color);
   background-repeat: no-repeat;
-  background-position: right -225px top -225px;
+  background-position: right -14.0625rem top -14.0625rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   body {
     background-image: url(images/bg-main-tablet.png),
       url(images/bg-pattern-1.svg);
-    background-position: left -225px top -225px, right -2.5rem top -2rem;
+    background-position: left -14.0625rem top -14.0625rem,
+      right -2.5rem top -2rem;
     background-size: 100%, auto 25rem;
   }
 }
@@ -68,7 +69,7 @@ body {
   body {
     background-image: url(images/bg-main-desktop.png),
       url(images/bg-pattern-1.svg);
-    background-position: left -42px top -142px, right -2.5rem top -2rem;
+    background-position: left -2.625rem top -8.875rem, right -2.5rem top -2rem;
     background-size: 100%, auto 25rem;
   }
 }
@@ -91,7 +92,7 @@ header {
   display: none;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   header,
   main,
   footer {
@@ -140,17 +141,19 @@ h1 {
   margin-block-start: 1.25rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   h1 {
     font-size: 4rem;
     line-height: 4rem;
     letter-spacing: -0.73px;
+    margin-inline-end: 11rem;
   }
 
   .intro p {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-block-start: 1.75rem;
+    margin-inline-end: 11rem;
   }
 }
 
@@ -191,7 +194,7 @@ h1 {
   top: -6.125rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   .hero {
     margin-block-start: 15.5625rem;
     margin-inline: auto;
@@ -264,7 +267,7 @@ h1 {
   line-height: 3.25rem;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   .hero-details {
     max-width: 25rem;
     height: 34.125rem;
@@ -372,6 +375,10 @@ footer {
   overflow: hidden;
 }
 
+.logo-footer {
+  max-width: 9.1875rem;
+}
+
 .footer-section {
   margin-block: 2rem 5rem;
 }
@@ -381,10 +388,14 @@ footer p {
   line-height: 1.625rem;
 }
 
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .social-icons {
   margin-block: 4rem 5rem;
   display: flex;
-  gap: 1.25rem;
 }
 
 .social-icons-hover {
@@ -392,11 +403,16 @@ footer p {
   cursor: pointer;
 }
 
+.social-icons-hover {
+  padding-inline-start: 1.25rem;
+  padding-block: 1.25rem;
+}
+
 .social-icons-hover:hover {
   fill: var(--red-orange);
 }
 
-@media (min-width: 680px) {
+@media (min-width: 42.5rem) {
   footer {
     margin-block-start: 11.4375rem;
   }
