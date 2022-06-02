@@ -69,14 +69,14 @@ body {
   body {
     background-image: url(images/bg-main-desktop.png),
       url(images/bg-pattern-1.svg);
-    background-position: left -2.625rem top -8.875rem, right -2.5rem top -2rem;
-    background-size: 100%, auto 25rem;
+    background-position: left -2.625rem top -8.875rem, right 0rem top -2.4rem;
+    background-size: 100%, auto 29.25rem;
   }
 }
 
 header,
 .intro,
-.hero-details h3,
+.hero-details h2,
 .hero-details-info,
 .hero-details-price,
 .buttons,
@@ -162,6 +162,7 @@ h1 {
     font-size: 5.5rem;
     line-height: 5.5rem;
     letter-spacing: -1px;
+    margin-inline-end: 12rem;
   }
 
   .intro p {
@@ -240,7 +241,7 @@ h1 {
   z-index: 1;
 }
 
-.hero-details h3 {
+.hero-details h2 {
   font-weight: var(--bold-font-weight);
   font-size: 2rem;
   line-height: 2.5rem;
@@ -277,7 +278,7 @@ h1 {
     z-index: 1;
   }
 
-  .hero-details h3,
+  .hero-details h2,
   .hero-details-info,
   .hero-details-price,
   .buttons {
@@ -293,14 +294,14 @@ h1 {
     margin-inline-start: 34rem;
   }
 
-  .hero-details h3,
+  .hero-details h2,
   .hero-details-info,
   .hero-details-price,
   .buttons {
     margin-inline: 3.375rem;
   }
 
-  .hero-details h3 {
+  .hero-details h2 {
     font-weight: var(--bold-font-weight);
     font-size: 2.5rem;
     line-height: 3.25rem;
