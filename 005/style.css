@@ -38,28 +38,6 @@ body {
   height: 100%;
 }
 
-body {
-  height: 100%;
-  background-image: url(images/pattern-background-mobile.svg);
-  background-repeat: repeat-x;
-  background-position-y: -2rem;
-  background-size: contain;
-  background-color: var(--background-color-body);
-  font-size: var(--mobile-regular-font-size);
-  font-family: var(--font-family);
-  text-align: center;
-  font-weight: 500;
-}
-
-@media (min-width: 48rem) {
-  body {
-    background-image: url(images/pattern-background-desktop.svg);
-
-    background-size: auto;
-    font-size: var(--regular-font-size);
-  }
-}
-
 img,
 picture,
 video,
@@ -77,6 +55,26 @@ select {
   font: inherit;
 }
 
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: repeat-x;
+  background-position-y: -2rem;
+  background-size: contain;
+  background-color: var(--background-color-body);
+  font-size: var(--mobile-regular-font-size);
+  font-family: var(--font-family);
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: auto;
+    font-size: var(--regular-font-size);
+  }
+}
+
 main {
   padding-inline: 1rem;
   padding-block-start: 4.4375rem;
@@ -90,7 +88,7 @@ main {
 
 .card {
   max-width: 20.4375rem;
-  height: 35.4375rem;
+  min-height: 35.4375rem;
   margin-inline: auto;
   border-radius: 1.25rem;
   overflow: hidden;
@@ -101,7 +99,7 @@ main {
 @media (min-width: 48rem) {
   .card {
     max-width: 28.125rem;
-    height: 43.5625rem;
+    min-height: 43.5625rem;
   }
 }
 
@@ -126,7 +124,7 @@ h1 {
 @media (min-width: 48rem) {
   h1 {
     font-size: var(--h1-font-size);
-    line-height: 2.315rem;
+    line-height: 2;
     margin-block-start: 2.8125rem;
   }
 }
@@ -260,7 +258,7 @@ p {
 
 .attribution {
   font-size: 0.6rem;
-  margin-top: 1.5rem;
+  margin-block: 1.5rem;
   font-style: italic;
   color: var(--accent-text-color);
 }
@@ -273,6 +271,6 @@ p {
 @media (min-width: 48rem) {
   .attribution {
     font-size: 0.7rem;
-    margin-top: 2rem;
+    margin-block: 2rem;
   }
 }
