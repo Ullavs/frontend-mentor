@@ -67,6 +67,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -81,16 +82,9 @@ main {
   padding-block-start: 4.4375rem;
 }
 
-main img {
-  max-height: 10rem;
-}
-
 @media (min-width: 48rem) {
   main {
     padding-block-start: 6.25rem;
-  }
-  main img {
-    max-height: 100%;
   }
 }
 
