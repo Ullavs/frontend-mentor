@@ -37,6 +37,7 @@ body {
   height: 100%;
   background-image: url(images/pattern-background-mobile.svg);
   background-repeat: repeat-x;
+  background-position-y: -3rem;
   background-color: var(--background-color-body);
   font-family: var(--font-family);
   font-size: var(--mobile-regular-font-size);
@@ -49,6 +50,7 @@ body {
   body {
     background-image: url(images/pattern-background-desktop.svg);
     font-size: var(--regular-font-size);
+    background-position-y: -8rem;
   }
 }
 
@@ -149,7 +151,7 @@ p {
   gap: 1.25rem;
 }
 
-.pricing-item h3 {
+.pricing-item h2 {
   font-size: 0.875rem;
   text-align: start;
   font-weight: 900;
@@ -190,7 +192,7 @@ p {
     padding: 1.5rem;
   }
 
-  .pricing-item h3 {
+  .pricing-item h2 {
     font-size: var(--regular-font-size);
     line-height: 1.325rem;
   }
