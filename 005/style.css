@@ -256,9 +256,13 @@ p {
   }
 }
 
+footer {
+  padding-block-end: 1rem;
+}
+
 .attribution {
   font-size: 0.6rem;
-  margin-block: 1.5rem;
+  margin-block-start: 1.5rem;
   font-style: italic;
   color: var(--accent-text-color);
 }
@@ -271,6 +275,6 @@ p {
 @media (min-width: 48rem) {
   .attribution {
     font-size: 0.7rem;
-    margin-block: 2rem;
+    margin-block-start: 2rem;
   }
 }
