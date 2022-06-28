@@ -1,5 +1,3 @@
-# IN PROGRESS
-
 # Frontend Mentor - Order summary card
 
 This is a solution to the [Order summary card](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -16,7 +14,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - CSS Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### Live URL
