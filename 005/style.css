@@ -1,19 +1,25 @@
 :root {
-  --background-color-body: hsl(225, 100%, 94%);
   --font-family: "Red Hat Display", sans-serif;
+
   --regular-font-size: 1rem;
+  --mobile-regular-font-size: 0.9375rem;
   --h1-font-size: 1.75rem;
+  --mobile-h1-font-size: 1.375rem;
   --change-font-size: 0.875rem;
+  --mobile-change-font-size: 0.8125rem;
   --buttons-font-size: 0.9375rem;
-  --background-color-card: #FFFFFF;
-  --text-color: #717FA6;
-  --accent-text-color: #1F2E55;
-  --pricing-item-background-color: #F7F9FF;
-  --pricing-item-text-color-change: #382AE1; 
+
+  --background-color-body: hsl(225, 100%, 94%);
+  --background-color-card: #ffffff;
+  --text-color: #717fa6;
+  --accent-text-color: #1f2e55;
+  --pricing-item-background-color: #f7f9ff;
+  --pricing-item-text-color-change: #382ae1;
   --button-text-color: #ffffff;
-  --button-background-color: #382AE1;
-  --hover-color: #766CF1;
-  --hover-color-cancel: #1F2E55;
+  --button-background-color: #382ae1;
+  --button-box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  --hover-color: #766cf1;
+  --hover-color-cancel: #1f2e55;
 }
 
 *,
@@ -29,13 +35,21 @@
 html,
 body {
   height: 100%;
-  background-image: url(images/pattern-background-desktop.svg);
-  background-repeat: no-repeat;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: repeat-x;
   background-color: var(--background-color-body);
   font-family: var(--font-family);
-  font-size: var(--regular-font-size);
+  font-size: var(--mobile-regular-font-size);
   text-align: center;
   font-weight: 500;
+}
+
+@media (min-width: 48rem) {
+  html,
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    font-size: var(--regular-font-size);
+  }
 }
 
 img,
@@ -54,97 +68,204 @@ select {
   font: inherit;
 }
 
+main {
+  padding-inline: 1rem;
+}
+
+main img {
+  max-height: 10rem;
+}
+
+@media (min-width: 48rem) {
+  main img {
+    max-height: 100%;
+  }
+}
+
 .card {
-  margin-block-start: 6.25rem;
-  max-width: 28.125rem;
+  margin-block-start: 4.4375rem;
+  max-width: 20.4375rem;
+  height: 35.4375rem;
   margin-inline: auto;
-  height: 43.5625rem;
   border-radius: 1.25rem;
   overflow: hidden;
   background-color: var(--background-color-card);
 }
 
+@media (min-width: 48rem) {
+  .card {
+    margin-block-start: 6.25rem;
+    max-width: 28.125rem;
+    height: 43.5625rem;
+  }
+}
+
 .card-main-text {
-  padding-inline: 3rem;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .card-main-text {
+    padding-inline: 3rem;
+  }
 }
 
 h1 {
-  font-size: var(--h1-font-size);
+  font-size: var(--mobile-h1-font-size);
   font-weight: 900;
-  line-height: 2.315rem;
+  line-height: 1.8194rem;
   color: var(--accent-text-color);
-  margin-block-start: 2.8125rem;
+  margin-block-start: 2rem;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: var(--h1-font-size);
+    line-height: 2.315rem;
+    margin-block-start: 2.8125rem;
+  }
 }
 
 p {
-  line-height: 1.625rem;
+  line-height: 1.5625rem;
   color: var(--text-color);
-  margin-block-start: 1.0625rem;
+  margin-block-start: 1rem;
+}
+
+@media (min-width: 48rem) {
+  p {
+    line-height: 1.625rem;
+    margin-block-start: 1rem;
+  }
 }
 
 .pricing-item {
   background-color: var(--pricing-item-background-color);
   border-radius: 0.6875rem;
-  margin-block-start: 1.25rem;
-  padding: 1.5rem;
+  margin-block-start: 1.5rem;
+  padding: 1rem;
   display: flex;
   gap: 1.25rem;
 }
 
 .pricing-item h3 {
+  font-size: 0.875rem;
   text-align: start;
   font-weight: 900;
-  line-height: 1.325rem;
+  line-height: 1.1575rem;
   color: var(--accent-text-color);
-
 }
 
 .pricing-item span {
   display: block;
-  font-size: var(--regular-font-size);
   font-weight: 500;
   line-height: 1.325rem;
-  margin-block-start: 0.375rem;
+  margin-block-start: 0.1875rem;
 }
 
 .pricing-item button {
   margin-inline-start: auto;
   border: none;
   background-color: inherit;
-  font-size: var(--change-font-size);
+  font-size: var(--mobile-change-font-size);
   font-weight: 700;
-  line-height: 1.1575rem;
+  line-height: 1.075rem;
   color: var(--pricing-item-text-color-change);
   cursor: pointer;
   text-decoration-line: underline;
-  text-underline-offset: 2px;
+  text-underline-offset: 1px;
+  transition: all ease-in-out 250ms;
 }
 
+.pricing-item button:hover,
+.pricing-item button:focus {
+  text-decoration: none;
+  color: var(--hover-color);
+}
 
+@media (min-width: 48rem) {
+  .pricing-item {
+    margin-block-start: 1.25rem;
+    padding: 1.5rem;
+  }
 
+  .pricing-item h3 {
+    font-size: var(--regular-font-size);
+    line-height: 1.325rem;
+  }
 
+  .pricing-item span {
+    margin-block-start: 0.375rem;
+  }
+
+  .pricing-item button {
+    font-size: var(--change-font-size);
+    line-height: 1.1575rem;
+    text-underline-offset: 2px;
+  }
+}
+
+.proceed,
+.cancel {
+  display: block;
+  border: none;
+  margin-block-start: 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 900;
+  line-height: 1.24rem;
+  cursor: pointer;
+}
+
+.proceed {
+  width: 100%;
+  padding-block: 0.9375rem;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border-radius: 0.6875rem;
+  box-shadow: var(--button-box-shadow);
+  transition: all ease-in-out 250ms;
+}
+
+.proceed:hover,
+.proceed:focus {
+  background-color: var(--hover-color);
+}
+
+.cancel {
+  color: var(--text-color);
+  background-color: transparent;
+  margin-inline: auto;
+  transition: all ease-in-out 250ms;
+}
+
+.cancel:hover,
+.cancel:focus {
+  color: var(--hover-color-cancel);
+}
+
+@media (min-width: 48rem) {
+  .proceed,
+  .cancel {
+    margin-block-start: 2rem;
+    font-size: var(--buttons-font-size);
+  }
+}
 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: var(--accent-text-color);
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--button-background-color);
+  text-decoration: none;
 }
 
-/* The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-### Primary
-
-- Pale blue: hsl(225, 100%, 94%)
-- Bright blue: hsl(245, 75%, 52%)
-
-### Neutral
-
-- Very pale blue: hsl(225, 100%, 98%)
-- Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)
-
+@media (min-width: 48rem) {
+  .attribution {
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+}
