@@ -37,7 +37,8 @@ body {
   height: 100%;
   background-image: url(images/pattern-background-mobile.svg);
   background-repeat: repeat-x;
-  background-position-y: -3rem;
+  background-position-y: -2rem;
+  background-size: contain;
   background-color: var(--background-color-body);
   font-family: var(--font-family);
   font-size: var(--mobile-regular-font-size);
@@ -51,6 +52,7 @@ body {
     background-image: url(images/pattern-background-desktop.svg);
     font-size: var(--regular-font-size);
     background-position-y: -8rem;
+    background-size: auto;
   }
 }
 
@@ -72,6 +74,7 @@ select {
 
 main {
   padding-inline: 1rem;
+  padding-block-start: 4.4375rem;
 }
 
 main img {
@@ -79,13 +82,15 @@ main img {
 }
 
 @media (min-width: 48rem) {
+  main {
+    padding-block-start: 6.25rem;
+  }
   main img {
     max-height: 100%;
   }
 }
 
 .card {
-  margin-block-start: 4.4375rem;
   max-width: 20.4375rem;
   height: 35.4375rem;
   margin-inline: auto;
@@ -96,7 +101,6 @@ main img {
 
 @media (min-width: 48rem) {
   .card {
-    margin-block-start: 6.25rem;
     max-width: 28.125rem;
     height: 43.5625rem;
   }
