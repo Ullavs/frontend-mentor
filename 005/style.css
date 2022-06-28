@@ -54,7 +54,7 @@ body {
 @media (min-width: 48rem) {
   body {
     background-image: url(images/pattern-background-desktop.svg);
-    background-position-y: -8rem;
+
     background-size: auto;
     font-size: var(--regular-font-size);
   }
