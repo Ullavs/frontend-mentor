@@ -1,0 +1,33 @@
+:root {
+  --font-family-1: "Fraunces", serif;
+  --font-family-2: "Montserrat", sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  --color-background: #f2eae2;
+  --color-card: #ffffff;
+  --color-h1: #1c232b;
+  --color-text-main: #6c7289;
+  --color-accent: #3d8168;
+  --color-hover: #1a4032;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+ */
