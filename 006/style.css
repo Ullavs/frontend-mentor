@@ -39,16 +39,20 @@ select {
   font: inherit;
 }
 
-body {
+html,
+body,
+main {
   height: 100%;
+}
+
+body {
   background-color: var(--color-background);
 }
 
 main {
-  padding-inline: 1rem;
+  padding: 1rem;
   display: grid;
   place-content: center;
-  height: 100vh;
 }
 
 .card {
