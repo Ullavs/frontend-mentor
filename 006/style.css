@@ -13,21 +13,131 @@
   --color-hover: #1a4032;
 }
 
-.attribution {
-  font-size: 11px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  height: 100%;
+  background-color: var(--color-background);
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-image: url(images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: 343px 240px;
+  max-width: 343px;
+  padding-block: 16.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-card);
+  padding-inline: 1.5rem;
+}
+
+small {
+  font-family: var(--font-family-2);
+  font-size: 0.75rem;
+  line-height: 0.91rem;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+  padding-block-start: 1.5rem;
+}
+
+h1 {
+  font-family: var(--font-family-1);
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--color-h1);
+  padding-block-start: 0.75rem;
+}
+
+p {
+  font-family: var(--font-family-2);
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+  color: var(--color-text-main);
+  padding-block-start: 1rem;
+}
+
+.prices {
+  padding-block-start: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.current-price {
+  font-family: var(--font-family-1);
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.previous-price {
+  font-family: var(--font-family-2);
+  font-size: 0.8125rem;
+  line-height: 1.4375rem;
+  color: var(--color-text-main);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  gap: 0.726rem;
+  justify-content: center;
+  padding-block: 0.9375rem;
+  width: 100%;
+  background-color: var(--color-accent);
+  border-radius: 0.5rem;
   text-align: center;
+  border: none;
+  margin-block-start: 1.25rem;
+  font-family: var(--font-family-2);
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: var(--color-card);
+  font-weight: 700;
 }
+
+.attribution {
+  font-family: var(--font-family-2);
+  text-align: center;
+  font-size: 0.6rem;
+  margin-block-start: 1.5rem;
+  color: var(--color-h1);
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-accent);
+  text-decoration: none;
 }
-
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
- */
