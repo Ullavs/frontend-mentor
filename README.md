@@ -9,3 +9,4 @@
 - 003: [NFT preview card component](https://ullavs.github.io/frontend-mentor/003/)
 - 004: [Equalizer landing page](https://ullavs.github.io/frontend-mentor/004/)
 - 005: [Order summary component](https://ullavs.github.io/frontend-mentor/005/)
+- 006: [Product preview card component](https://ullavs.github.io/frontend-mentor/006/)
