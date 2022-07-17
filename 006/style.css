@@ -45,7 +45,7 @@ body {
 }
 
 main {
-  padding: 1rem;
+  padding-inline: 1rem;
   display: grid;
   place-content: center;
   height: 100vh;
