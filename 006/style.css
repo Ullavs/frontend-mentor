@@ -61,9 +61,20 @@ main {
   background-size: 343px 240px;
   max-width: 343px;
   padding-block: 16.5rem 1.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: var(--color-card);
   padding-inline: 1.5rem;
+}
+
+@media (min-width: 650px) {
+  .card {
+    background-image: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 600px;
+    padding-inline: 20.75rem 2rem;
+    padding-block: 2rem;
+  }
 }
 
 small {
@@ -76,6 +87,12 @@ small {
   padding-block-start: 1.5rem;
 }
 
+@media (min-width: 650px) {
+  small {
+    padding-block-start: 0;
+  }
+}
+
 h1 {
   font-family: var(--font-family-1);
   font-size: 2rem;
@@ -84,12 +101,24 @@ h1 {
   padding-block-start: 0.75rem;
 }
 
+@media (min-width: 650px) {
+  h1 {
+    padding-block-start: 1.25rem;
+  }
+}
+
 p {
   font-family: var(--font-family-2);
   font-size: 0.875rem;
   line-height: 1.4375rem;
   color: var(--color-text-main);
   padding-block-start: 1rem;
+}
+
+@media (min-width: 650px) {
+  p {
+    padding-block-start: 1.5rem;
+  }
 }
 
 .prices {
@@ -115,6 +144,12 @@ p {
   text-decoration: line-through;
 }
 
+@media (min-width: 650px) {
+  .prices {
+    padding-block-start: 1.8125rem;
+  }
+}
+
 button {
   display: flex;
   gap: 0.726rem;
@@ -135,6 +170,12 @@ button {
   transition: all ease-in-out 250ms;
 }
 
+@media (min-width: 650px) {
+  button {
+    margin-block-start: 1.875rem;
+  }
+}
+
 button:hover,
 button:focus {
   background-color: var(--color-hover);
@@ -151,4 +192,11 @@ button:focus {
 .attribution a {
   color: var(--color-accent);
   text-decoration: none;
+}
+
+@media (min-width: 650px) {
+  .attribution {
+    font-size: 0.7rem;
+    margin-block-start: 2rem;
+  }
 }
