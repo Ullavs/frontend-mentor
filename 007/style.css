@@ -1,10 +1,10 @@
 :root {
   --font-family: "League Spartan", sans-serif;
-  --body-background-color: #f2f2f2;
+  --body-background-color: #fff;
 
   --main-color: #512051;
   --p-text-color: #927b91;
-  --review-background-color: #f7f2f7;
+  --review-background-color: hsl(300, 24%, 96%);
   --testimonial-text-color: #ffffff;
   --testimonial-text-accent-color: #ee69a4;
 }
@@ -21,7 +21,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 img,
@@ -51,12 +51,12 @@ body {
     url(images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat;
   background-position: top left, bottom right;
-  background-size: contain;
   font-family: var(--font-family);
+  min-height: 100%;
 }
 
 /* 23.25 rem */
-@media (min-width: 23.25rem) {
+@media (min-width: 40rem) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg),
       url(images/bg-pattern-bottom-desktop.svg);
