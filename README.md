@@ -10,3 +10,4 @@
 - 004: [Equalizer landing page](https://ullavs.github.io/frontend-mentor/004/)
 - 005: [Order summary component](https://ullavs.github.io/frontend-mentor/005/)
 - 006: [Product preview card component](https://ullavs.github.io/frontend-mentor/006/)
+- 007: [Social proof section](https://ullavs.github.io/frontend-mentor/007/)
