@@ -45,9 +45,6 @@ h1 {
   overflow-wrap: break-word;
 }
 
-/* - Mobile: 375px
-- Desktop: 1440px */
-
 body {
   background-color: var(--body-background-color);
   background-image: url(images/bg-pattern-top-mobile.svg),
@@ -78,8 +75,8 @@ main {
   }
 
   main {
+    padding: 7.375rem 0 7.375rem;
     max-width: 70rem;
-    margin-block: 8rem;
     display: grid;
     grid-template-columns: 445px 540px;
     grid-template-rows: 245px 266px;
