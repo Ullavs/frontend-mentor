@@ -116,6 +116,7 @@ main {
     line-height: 3rem;
     letter-spacing: -3px;
     text-shadow: none;
+    max-width: 400px;
   }
 
   .introduction p {
