@@ -242,7 +242,7 @@ main {
   .testimonials {
     margin-block-start: 0rem;
     display: grid;
-    grid-template-rows: 16px 16px 234px 16px 16px;
+    grid-template-rows: 16px 16px 202px 16px 16px;
     grid-template-columns: 350px 350px 350px;
     column-gap: 1.875rem;
   }
