@@ -1,4 +1,4 @@
-# Front-end Style Guide
+/* # Front-end Style Guide
 
 ## Layout
 
@@ -31,4 +31,12 @@ We provide SVGs for the social icons. But please feel free to use a font icon li
 
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+- [Ionicons](https://ionicons.com) */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
