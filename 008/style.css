@@ -1,3 +1,12 @@
+:root {
+  --background-color: #e0e9f3;
+  --background-color-card: #ffffff;
+  --main-color: #48556a;
+  --paragraph-text-color: #6e8098;
+  --date-text-color: #9daec2;
+  --font-family: "Manrope", sans-serif;
+}
+
 /* # Front-end Style Guide
 
 ## Layout
@@ -6,18 +15,6 @@ The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px
-
-## Colors
-
-- Very Dark Grayish Blue: hsl(217, 19%, 35%)
-- Desaturated Dark Blue: hsl(214, 17%, 51%)
-- Grayish Blue: hsl(212, 23%, 69%)
-- Light Grayish Blue: hsl(210, 46%, 95%)
-
-## Typography
-
-### Body Copy
-
 - Font size: 13px
 
 ### Headings
@@ -26,17 +23,17 @@ The designs were created to the following widths:
 - Weights: 500, 700
 
 ## Icons
+*/
 
-We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
 
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com) */
-
-.attribution {
+footer {
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
+footer a {
   color: hsl(228, 45%, 44%);
 }
